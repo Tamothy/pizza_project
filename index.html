@@ -10,11 +10,89 @@
   <body>
     <div class="container">
       <h1>Welcome to Timeless Tamothy's Pizza!</h1>
-      <h2>Please choose your following toppings:</h2>
-      <div id="reveal">
-        <ul class="results">
-        </ul>
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Please fill out the following information:</h3>
+          <form id="new-pizza-customer">
+            <!-- first name -->
+            <div class="form-group">
+              <label for="new-first-name">First name</label>
+              <input type="text" class="form-control" id="new-first-name">
+            </div>
+            <!-- last name -->
+            <div class="form-group">
+              <label for="new-last-name">Last name</label>
+              <input type="text" class="form-control" id="new-last-name">
+            </div>
+            <!-- pizza size -->
+            <div class="form-group">
+              <label for="size">Size</label>
+              <select name="size" id="size" class="form-control">
+                <option value="10">Small - 10" / 25cm</option>
+                <option value="12">Medium - 12" / 30cm</option>
+                <option value="14">Large - 14" / 35cm</option>
+                <option value="16">X-Large - 16" / 40cm</option>
+              </select>
+            </div>
+            <!-- pizza toppings -->
+            <label for="toppings">Toppings</label>
+            <div class="checkbox">
+              <label><input type="checkbox" value="pepperoni">Pepperoni</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="extra_cheese">Extra cheese</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="italian_sausage">Italian sausage</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="olives">Olives</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="mushrooms">Mushrooms</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="green_peppers">Green peppers</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="red_peppers">Red peppers</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="basil">Basil</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="red_onions">Red onions</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="jalapenos">Jalapenos</label>
+            </div>
+            <!-- quantity -->
+            <div class="form-group">
+              <label for="quantity">Quantity:</label>
+              <select name="quantity" id="quantity" class="form-control">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <!-- submit pizza form -->
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+          <!-- shows pizza info -->
+          <div class="col-md-6">
+            <div id="pizza-info">
+              <h2>Order Info:</h2>
+              <p>First name: <span class="first_name"></span></p>
+              <p>Last name: <span class="last_name"></span></p>
+              <p>Pizza size: <span class="pizza_size"></span></p>
+              <p>Pizza toppings: <ul class="pizza_toppings"></ul></p>
+              <p>Pizza quantity: <span class="quantity"></span></p>
+              <h3 class="total_price"></h3>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
   </body>
 </html>

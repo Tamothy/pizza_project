@@ -1,11 +1,11 @@
 //business_logic
-function Pizza(firstName, lastName, toppings, size, quantity, total) {
+function Pizza(firstName, lastName, size, toppings, quantity, totalPrice) {
   this.firstName = firstName;
   this.lastName = lastName;
-  this.toppings = toppings;
   this.size = size;
+  this.toppings = toppings;
   this.quantity = quantity;
-  this.totalPrice = total;
+  this.totalPrice = totalPrice;
 }
 
 //customer information
@@ -17,8 +17,8 @@ Pizza.prototype.customerInfo = function () {
 Pizza.prototype.pizzaCost = function () {
   var totalToppings = this.toppings.length * .75;
   var onePizza = totalToppings + this.size;
-  var total = onePizza * this.quantity;
-  this.totalPrice = total;
+  var totalPrice = onePizza * this.quantity;
+  this.totalPrice = totalPrice;
   return this.totalPrice;
 }
 
@@ -29,4 +29,6 @@ Pizza.prototype.messagePrice = function() {
 
 //user_interface_logic
 $(document).ready(function() {
+
+
 });
