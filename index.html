@@ -28,10 +28,10 @@
             <div class="form-group">
               <label for="size">Size</label>
               <select name="size" id="size" class="form-control">
-                <option value="10">Small - 10" / 25cm</option>
-                <option value="12">Medium - 12" / 30cm</option>
-                <option value="14">Large - 14" / 35cm</option>
-                <option value="16">X-Large - 16" / 40cm</option>
+                <option value="Small">Small - 10" / 25cm</option>
+                <option value="Medium">Medium - 12" / 30cm</option>
+                <option value="Large">Large - 14" / 35cm</option>
+                <option value="X-Large">X-Large - 16" / 40cm</option>
               </select>
             </div>
             <!-- pizza toppings -->
@@ -40,10 +40,10 @@
               <label><input type="checkbox" value="pepperoni">Pepperoni</label>
             </div>
             <div class="checkbox">
-              <label><input type="checkbox" value="extra_cheese">Extra cheese</label>
+              <label><input type="checkbox" value="extra cheese">Extra cheese</label>
             </div>
             <div class="checkbox">
-              <label><input type="checkbox" value="italian_sausage">Italian sausage</label>
+              <label><input type="checkbox" value="italian sausage">Italian sausage</label>
             </div>
             <div class="checkbox">
               <label><input type="checkbox" value="olives">Olives</label>
@@ -52,16 +52,16 @@
               <label><input type="checkbox" value="mushrooms">Mushrooms</label>
             </div>
             <div class="checkbox">
-              <label><input type="checkbox" value="green_peppers">Green peppers</label>
+              <label><input type="checkbox" value="green peppers">Green peppers</label>
             </div>
             <div class="checkbox">
-              <label><input type="checkbox" value="red_peppers">Red peppers</label>
+              <label><input type="checkbox" value="red peppers">Red peppers</label>
             </div>
             <div class="checkbox">
               <label><input type="checkbox" value="basil">Basil</label>
             </div>
             <div class="checkbox">
-              <label><input type="checkbox" value="red_onions">Red onions</label>
+              <label><input type="checkbox" value="red onions">Red onions</label>
             </div>
             <div class="checkbox">
               <label><input type="checkbox" value="jalapenos">Jalapenos</label>
@@ -83,13 +83,12 @@
           <!-- shows pizza info -->
           <div class="col-md-6">
             <div id="pizza-info">
-              <h2>Order Info:</h2>
-              <p>First name: <span class="first_name"></span></p>
-              <p>Last name: <span class="last_name"></span></p>
-              <p>Pizza size: <span class="pizza_size"></span></p>
-              <p>Pizza toppings: <ul class="pizza_toppings"></ul></p>
-              <p>Pizza quantity: <span class="quantity"></span></p>
-              <h3 class="total_price"></h3>
+              <h4>Order Info:</h4>
+              <h2 class="full_name">Name: </h2>
+              <p>Size: <span class="pizza_size"></span></p>
+              <p>Toppings: <span class="pizza_toppings"></span></p>
+              <p>Quantity: <span class="pizza_quantity"></span></p>
+              <p>Your total price: <span class="total_price"></p>
             </div>
           </div>
         </div>
