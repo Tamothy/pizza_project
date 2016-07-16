@@ -18,7 +18,8 @@ This project contains a pizza form that takes in name, pizza size, toppings, qua
 | It returns one pizza topping                            | Pepperoni     | "pepperoni" |
 | It returns more than one pizza topping selected         | Pepperoni, Extra cheese | ["pepperoni", "extra cheese"] |
 | It returns the quantity                                 | 2             | 2         |
-| It returns the pizza price                              | Medium, Pepperoni, 2 | 25.50 |
+| It returns the price for one pizza                      | Medium, Pepperoni, 1 | 12.75 |
+| It returns the price for two pizzas                     | Medium, Pepperoni, 2 | 25.50 |
 
 ## Setup/Installation Requirements
 
