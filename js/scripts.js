@@ -26,7 +26,7 @@ Pizza.prototype.pizzaCost = function () {
   var onePizza = toppings + size;
   var total = onePizza * this.quantity;
   this.totalPrice = total;
-  return "$" + this.totalPrice;
+  return "$" + this.totalPrice.toFixed(2);
 }
 
 // user interface logic
